@@ -1,4 +1,4 @@
-package lesson22;
+package homework.lesson22;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.time.LocalTime;
 import java.time.ZoneId;
-import java.util.InputMismatchException;
 
 @WebServlet(urlPatterns = {"/minsk", "/washington", "/beijing", "/age"})
 

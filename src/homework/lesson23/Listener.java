@@ -1,4 +1,4 @@
-package lesson23;
+package homework.lesson23;
 
 import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
