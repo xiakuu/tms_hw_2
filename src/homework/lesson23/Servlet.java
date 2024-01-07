@@ -29,24 +29,21 @@ public class Servlet extends HttpServlet {
                 filePart.write("D:\\" + name);
                 resp.getWriter().print("ok");
             } catch (Exception e) {
-                resp.getWriter().print("smth wrong");
+                resp.getWriter().print("smth wrong: " + e);
             }
+
+
         } else if(path.equals("/book")){
             PrintWriter out = resp.getWriter();
-            // File name
-            String pdfName = "test.txt";
-            // File path
-            String pdfPath = "C:\\";
 
-            // Set the content type and header of the response.
+            String pdfName = "test.txt";
+
+            String pdfPath = "C:\\";
             resp.setContentType("application/msword");
             resp.setHeader("Content-Disposition",
-                    "attachment; filename=\""
-                            + pdfName + "\"");
+                    "attachment; filename=\""  + pdfName + "\"");
 
-            // Get FileInputStream object to identify the path
-            FileInputStream inputStream
-                    = new FileInputStream(pdfPath + pdfName);
+            FileInputStream inputStream = new FileInputStream(pdfPath + pdfName);
 
 
             int in;

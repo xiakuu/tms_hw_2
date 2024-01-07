@@ -14,7 +14,7 @@ public class Main extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         if(req.getServletPath().equals("/tms")){
-            resp.sendRedirect("/verse.html");
+            resp.sendRedirect("/tms.html");
         }
     }
 }
